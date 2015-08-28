@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('words', function() {
+    this.route('un-dominican');
+  });
 });
 
 export default Router;

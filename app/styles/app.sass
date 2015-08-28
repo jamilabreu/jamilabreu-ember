@@ -1,0 +1,94 @@
+html
+  height: 100%
+
+body
+  color: #333333
+  font-family: Courier, monospace
+  font-size: 15px
+  height: 100%
+  margin: 0
+
+h1, h2, h3, h4
+  margin: 0
+
+img
+  vertical-align: middle
+
+ul
+  margin: 0
+  padding: 0 0 0 22px
+
+// GLOBAL
+.ember-application > .ember-view
+  // align-items: center
+  display: flex
+  flex-flow: row nowrap
+  height: 100%
+  justify-content: center
+
+.container
+  align-self: center
+  line-height: 24px
+  margin-bottom: 40px
+  width: 315px
+  img
+    border-radius: 4px
+    float: left
+    height: 50px
+    margin: 0 15px 5px 0
+
+.writing-container
+  align-self: flex-start
+  line-height: 24px
+  margin: 50px 10px
+  width: 540px
+  h1
+    margin-bottom: 10px
+  h4
+    color: #999
+    font-weight: normal
+    margin-bottom: 30px
+  em
+    color: #777
+  img
+    width: 100%
+  .fluid-width-video-wrapper
+    position: relative
+    width: 100%
+    height: 0
+    padding-bottom: 51%
+    iframe
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+
+  // p
+  //   display: flex
+  //   flex-flow: row wrap
+  //   // justify-content: flex-start
+  //   // align-items: flex-start
+  //   // align-content: flex-start
+  //   img
+  //     // margin: 0 auto
+
+.social
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-around
+  a
+    color: #e6e3d7
+    text-decoration: none
+    &:first-child
+      &:hover
+        color: #27df7c
+    &:nth-child(2)
+      &:hover
+        color: #3b5998
+    &:nth-child(3)
+      &:hover
+        color: #4099ff
+    &:last-child
+      &:hover
+        color: #517fa4
