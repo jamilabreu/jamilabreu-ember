@@ -1,3 +1,5 @@
+@import ../../bower_components/bourbon/app/assets/stylesheets/_bourbon
+
 html
   height: 100%
 
@@ -20,14 +22,14 @@ ul
 
 // GLOBAL
 .ember-application > .ember-view
-  // align-items: center
-  display: flex
-  flex-flow: row nowrap
+  @include align-items(center)
+  @include display(flex)
+  @include flex-flow(row nowrap)
+  @include justify-content(center)
   height: 100%
-  justify-content: center
 
 .container
-  align-self: center
+  @include align-self(center)
   line-height: 24px
   margin-bottom: 40px
   width: 315px
@@ -38,7 +40,7 @@ ul
     margin: 0 15px 5px 0
 
 .writing-container
-  align-self: flex-start
+  @include align-self(flex-start)
   line-height: 24px
   margin: 50px 10px
   width: 540px
@@ -53,30 +55,21 @@ ul
   img
     width: 100%
   .fluid-width-video-wrapper
-    position: relative
-    width: 100%
     height: 0
     padding-bottom: 51%
+    position: relative
+    width: 100%
     iframe
-      position: absolute
-      width: 100%
       height: 100%
       left: 0
+      position: absolute
       top: 0
-
-  // p
-  //   display: flex
-  //   flex-flow: row wrap
-  //   // justify-content: flex-start
-  //   // align-items: flex-start
-  //   // align-content: flex-start
-  //   img
-  //     // margin: 0 auto
+      width: 100%
 
 .social
-  display: flex
-  flex-flow: row nowrap
-  justify-content: space-around
+  @include display(flex)
+  @include flex-flow(row nowrap)
+  @include justify-content(space-between)
   a
     color: #e6e3d7
     text-decoration: none
