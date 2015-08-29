@@ -19,6 +19,8 @@ module.exports = function(environment) {
     },
 
     contentSecurityPolicy: {
+      'img-src': "'self' www.google-analytics.com",
+      'script-src': "'self' 'unsafe-inline' www.google-analytics.com",
       'style-src': "'self' maxcdn.bootstrapcdn.com"
     }
   };

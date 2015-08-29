@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('words', function() {
     this.route('un-dominican');
   });
+  this.route('wildcard', { path: '*:' });
 });
 
 export default Router;
